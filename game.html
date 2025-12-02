@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud Jump Clicker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Shooter: Asteroid Belt</title>
     <style>
-        body { text-align: center; font-family: sans-serif; background-color: #f39c12; color: white; padding-top: 50px; }
-        #counter { font-size: 4em; margin-bottom: 20px; }
-        button { padding: 15px 30px; font-size: 1.5em; cursor: pointer; background-color: #3498db; color: white; border: none; border-radius: 8px; }
+        body { 
+            background-color: #000; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            color: #fff; 
+            font-family: 'Arial', sans-serif;
+        }
+        canvas { 
+            border: 2px solid #fff; 
+            background-color: #000; 
+            cursor: none; 
+        }
+        .controls { 
+            margin-top: 10px; 
+            font-size: 0.9em; 
+            color: #ccc;
+        }
+        .controls p {
+            margin: 2px 0;
+        }
+        h1 { color: #f39c12; }
     </style>
 </head>
 <body>
-    <h1>Cloud Jump Clicker</h1>
-    <p>How fast can you click the cloud?</p>
-    <div id="counter">0</div>
-    <button onclick="countClick()">Click the Cloud!</button>
-    <p><a href="../index.html" style="color: white;">← Back to Arcade Nexus</a></p>
+    <h1>🚀 Retro Shooter: Asteroid Belt</h1>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    
+    <div class="controls">
+        <p>Use **Mouse** to move the spaceship.</p>
+        <p>Click **Mouse** or press **Space** to shoot.</p>
+    </div>
+
+    <p><a href="../index.html" style="color: #2ecc71;">← Back to Arcade Nexus</a></p>
+    
     <script src="game.js"></script>
 </body>
 </html>
